@@ -27,3 +27,6 @@ def client_send():
 
 receive_thread = threading.Thread(target=client_receive)
 receive_thread.start()
+
+send_thread = threading.Thread(target=client_send)
+send_thread.start()
